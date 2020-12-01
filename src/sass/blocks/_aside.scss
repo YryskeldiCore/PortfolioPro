@@ -1,0 +1,27 @@
+.aside {
+    position: fixed;
+    top: 230px;
+    left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 340px;
+    z-index: 3;
+    &__divider {
+        width: 2px;
+        height: 70px;
+        background-color: #000000;
+    }
+    &__text {
+        height: 150px;
+        width: 24px;
+        font-weight: bold;
+        font-size: 18px;
+        span {
+            transform: rotate(-90deg) translate(-40%,-260%);
+            display: block;
+            width: 165px;
+        }
+    }
+}

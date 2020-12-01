@@ -1,0 +1,42 @@
+.promo {
+    min-height: 100vh;
+    position: relative;
+    padding-top: 206px;
+    background: url('../img/main_bg.jpg') no-repeat 50%/cover;
+    &__btns {
+        margin-top: 25px;
+        width: 260px;
+        display: flex;
+        a {
+            color: #000000;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 21px;
+            text-decoration: none;
+            &:hover {
+                color: #000000;
+            }
+        }
+    }
+    .hamburger {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        height: 24px;
+        width: 36px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        cursor: pointer;
+        span {
+            display: block;
+            width: 30px;
+            height: 4px;
+            background: #151812;
+        }
+        span.long {
+            width: 36px;
+        }
+    }
+}

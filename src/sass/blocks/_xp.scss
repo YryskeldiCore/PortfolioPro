@@ -1,0 +1,91 @@
+.xp {
+    padding-top: 120px;
+    &__subtitle {
+        text-align: center;
+        position: relative;
+        &::before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__title {
+        text-align: center;
+    }
+    .divider {
+        margin: 0 auto;
+        margin-top: 25px;
+    }
+
+    &__wrapper {
+        padding: 40px 65px 0 65px;
+        display: grid;
+        grid-template-columns: repeat(2, 425px);
+        justify-content: space-between;
+        ul {
+            list-style-type: none;
+            li {
+                position: relative;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 2px;
+                    height: calc(100% + 18px);
+                    background-color: #000;
+                    top: -18px;
+                    left: -1px;
+                }
+            }
+        }
+    }
+    
+    &__content {
+        position: relative;
+        padding: 20px 0 0 43px;
+        &:before {
+            content: '';
+            position: absolute;
+            height: 2px;
+            width: 42px;
+            background-color: #000;
+            top: 38px;
+            left: 0;
+        }
+        &-head {
+            position: relative;
+            padding: 0 0 12px 56px;
+            img {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                z-index: 3;
+            }
+        }
+        .subtitle {
+            &:before {
+                top: 0;
+                left: -60px;
+            }
+        }
+        &-info {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+        }
+        &-body {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+    &__edu {
+        position: relative;
+        padding-left: 35px;
+        @include before_circle;
+        &::before {
+            top: 18px;
+            left: -13px;
+            width: 25px;
+            height: 25px;
+        }
+    }
+}
